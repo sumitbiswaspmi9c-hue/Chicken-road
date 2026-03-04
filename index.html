@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Cross Road Game | @sumit.coder</title>
   <link rel="stylesheet" href="./style.css">
 
+  <style>
+    .watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 15px;
+      opacity: 0.4;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      color: white;
+      pointer-events: none; /* prevents blocking clicks */
+      z-index: 9999;
+    }
+  </style>
 </head>
 <body>
 
-<div id="root" />
+<div id="root"></div>
 
-  <script type="module" src="./script.js"></script>
+<div class="watermark">Sumit Biswas 2026</div>
+
+<script type="module" src="./script.js"></script>
 
 </body>
 </html>
