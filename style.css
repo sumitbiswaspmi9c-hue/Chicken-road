@@ -80,3 +80,29 @@ body {
     cursor: pointer;
   }
 }
+/* Watermark Design */
+.watermark {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.6;
+  text-shadow: 
+    2px 2px 0px #000,
+    4px 4px 0px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 9999;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+}
+
+/* Optional glow effect on hover (cool effect) */
+.watermark:hover {
+  opacity: 1;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #00ffcc,
+    0 0 20px #00ffcc;
+}
